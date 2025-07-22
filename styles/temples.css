@@ -1,0 +1,117 @@
+/* Base styles for mobile-first design */
+:root {
+  --primary-color: #4b0082;
+  --secondary-color: #ffffff;
+  --accent-color: #6a1b9a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--secondary-color);
+  color: #333;
+  line-height: 1.5;
+  
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+}
+
+#course-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#menu {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  background-color: var(--primary-color);
+}
+
+nav.open {
+  display: flex;
+}
+
+.navigation {
+  list-style: none;
+}
+
+.navigation li a {
+  display: block;
+  padding: 1rem;
+  color: var(--secondary-color);
+  text-decoration: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navigation li a:hover {
+  background-color: var(--accent-color);
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+}
+
+main h1 {
+  text-align: center;
+}
+
+.temple-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.temple-card {
+  background: #fafffb;
+  padding: 0.75rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.temple-card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.temple-card figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}

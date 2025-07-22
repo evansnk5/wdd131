@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 - Dynamic Web Fundamentals - Evans Nkrumah</title>
+        <meta name="description" content="Evans Nkrumah's WDD 131 course page for Dynamic Web Fundamentals. Learn about web development, HTML, CSS, and JavaScript.">
+        <meta name="author"  content="Evans Nkrumah">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/temples.css">
+        <link rel="stylesheet" href="styles/temples-large.css">
+
+        <!-- Scripts -->
+        <script src="scripts/temples.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <p id="course-title">Temple Album</p>
+            <a id="menu" aria-label="Menu Button"></a>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Old</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Large</a></li>
+                    <li><a href="#">Small</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Temples of The Church of Jesus Christ of Latter-day Saints</h1>
+            <section class="temple-list">
+      <!-- Repeatable Card Template -->
+                <figure class="temple-card">
+                    <img src="images/Gilbert.jpg" alt="Salt Lake Temple" loading="lazy" />
+                    <figcaption>Gilbert Arizone Temple</figcaption>
+                </figure>
+
+                <figure class="temple-card">
+                    <img src="images/Salt.jpg" alt="Salt Lake Temple" loading="lazy" />
+                    <figcaption>Salt Lake Temple</figcaption>
+                </figure>
+
+                <figure class="temple-card">
+                    <img src="images/washington.jpg" alt="Washington D.C. Temple" loading="lazy" />
+                    <figcaption>Washington D.C. Temple</figcaption>
+                </figure>
+                <figure class="temple-card">
+                    <img src="images/San.jpg" alt="San Diego Temple" loading="lazy" />
+                    <figcaption>San Diego Temple</figcaption>
+                </figure>
+                <figure class="temple-card">
+                    <img src="images/Oakland.jpg" alt="San Diego Temple" loading="lazy" />
+                    <figcaption>Okland, California Temple</figcaption>
+                </figure>
+                <figure class="temple-card">
+                    <img src="images/San.jpg" alt="San Diego Temple" loading="lazy" />
+                    <figcaption>San Diego Temple</figcaption>
+                </figure>
+                <figure class="temple-card">
+                    <img src="images/St-ogden.jpg" alt="San Diego Temple" loading="lazy" />
+                    <figcaption>St. Ogden Temple, United States</figcaption>
+                </figure>
+                <figure class="temple-card">
+                    <img src="images/Monterrey.jpg" alt="Provo City Center Temple" loading="lazy" />
+                    <figcaption>Monterrey Mexico Temple</figcaption>
+                </figure>
+                <figure class="temple-card">
+                    <img src="images/accra.jpg" alt="Provo City Center Temple" loading="lazy" />
+                    <figcaption>Accra Ghana Temple</figcaption>
+                </figure>
+            </section>
+            
+        </main>
+            <footer>
+                <p>&copy;<span id="currentyear"></span> ❤  Evans Nkrumah ❤ Ghana</p>
+                <p id="lastModified"></p>
+            </footer>
+
+    </body>
+</html>
