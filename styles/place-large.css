@@ -1,0 +1,6 @@
+@media (min-width: 768px) {
+  .emoji-icon::after {
+    content: " ⛅";
+    font-size: 1.2rem;
+  }
+}

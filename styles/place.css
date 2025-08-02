@@ -1,0 +1,78 @@
+/* Global Styles */
+:root {
+    --primary-color: #FC3D32;   /* ghana flag red */
+    --secondary-color: #007E3A; /* ghana flag green */
+    --text-color: #333;
+    --bg-color: #FFF;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.data ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.data li {
+    margin-bottom: 0.5rem;
+}
+
+.weather {
+    margin-top: 2rem;
+}
+
+.weather-data {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.weather h2::after {
+    content: " ⛅";
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: white;
+    margin-top: 2rem;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .weather {
+        margin-top: 0;
+    }
+}
